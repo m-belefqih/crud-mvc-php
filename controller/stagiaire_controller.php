@@ -8,10 +8,7 @@ function indexAction()
         $messageSuccess = $_SESSION['messageSuccess'];
         unset($_SESSION['messageSuccess']);
     }
-    if (isset($_SESSION['messageSuccessUpdate'])) {
-        $messageSuccess = $_SESSION['messageSuccessUpdate'];
-        unset($_SESSION['messageSuccessUpdate']);
-    }
+    
     $stagiaires = findAll();
     require_once 'views/liste_stagiaires.php';
 }
@@ -34,6 +31,8 @@ function storeAction()
         require_once 'views/create.php';
     } else {
         create();
+        $_SESSION['messageSuccess'] = "Le stagiaire a été ajouté avec succès";
+
         header('Location: index.php?action=list');
     }
 }
@@ -50,7 +49,7 @@ function updateAction()
     extract($_POST);
     edit($id, $nom, $prenom, $age, $login, $password);
 
-    $_SESSION['messageSuccessUpdate'] = "Le stagiaire a été modifié avec succès";
+    $_SESSION['messageSuccess'] = "Le stagiaire a été modifié avec succès";
 
     header('location:index.php?action=list');
 }
