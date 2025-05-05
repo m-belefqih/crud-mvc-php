@@ -1,7 +1,5 @@
 ## Introduction
 
-## Introduction
-
 This project is a simple PHP MVC (Model-View-Controller) application for managing interns (stagiaires). It provides the full CRUD workflow—create, read, update and delete—using a front controller to route requests, PDO for secure database access, and PHP sessions for flash messaging. The codebase is organized into:
 
 - `controller/` for business logic
