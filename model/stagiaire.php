@@ -11,14 +11,6 @@ function findAll()
     return $pdo->query('SELECT * FROM stagiaire ORDER BY id DESC')->fetchAll(PDO::FETCH_OBJ);
 }
 
-//function create()
-//{
-//    extract($_POST); // $_POST['nom'], $_POST['prenom'], $_POST['age'], $_POST['login'], $_POST['password']
-//    $pdo = database_connection();
-//    $sqlState = $pdo->prepare("INSERT INTO stagiaire VALUES(null,?,?,?,?,?)");
-//    return $sqlState->execute([$nom, $prenom, $age, $login, $password]);
-//}
-
 function create()
 {
     // Vérification des champs POST avant de les utiliser
