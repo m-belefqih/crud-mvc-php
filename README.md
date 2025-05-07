@@ -27,6 +27,17 @@ By following this structure, the application remains easy to maintain and extend
     └── database.php
 ```
 
+## 🗂️ MVC Structure Diagram
+
+![MVC Diagram](/mvc-diagram.png)
+
+This diagram illustrates the MVC (Model-View-Controller) architecture used in the project.  
+- The **View** (`index.php`) displays the user interface.  
+- The **Controller** (`stagiaire_controller.php`) handles user input and updates the model or view accordingly.  
+- The **Model** (`stagiaire.php`) interacts with the database and contains methods like `findAll()`, `create()`, `edit()`, `destroy()`, and `view()`.
+
+This structure helps keep the code modular, organized, and easier to maintain.
+
 ## Database
 
 ```sql 
