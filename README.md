@@ -60,3 +60,8 @@ INSERT INTO stagiaire (nom, prenom, age, login, password) VALUES
 ('Ahmed', 'Khalid', 23, 'khalid.ahmed', 'stagiaire789'),
 ('Garcia', 'Sofia', 20, 'sofia.garcia', 'trainee2023');
 ```
+
+## Note that 
+
+Khassk t9ol f had fichier tari9a kifach tkhadem had projet,
+kib7al khassk tcloner w après t7atou f dossier dyal www (en cas de wamp) ou bien http (en cas de xamp) w mn ba3d chouf projet
